@@ -1,0 +1,35 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    
+    <script>
+    window.neo = window.neo ? window.neo : {};
+    </script>
+    
+    <script src="node_modules/diff/dist/diff.min.js"></script>
+    
+    <script src="undo.js"></script>
+
+    <script src="app.js"></script>
+</head>
+
+<body>
+
+    <textarea rows="20" cols="40" id="text"></textarea>
+
+    
+    <div>
+        <button onClick="neo.undoManager.takeSnapshot()">Take snapshot</button>
+        <button onClick="neo.undoManager.undo()">Undo</button>
+        <button onClick="neo.undoManager.redo()">Redo</button>
+    </div>
+    
+
+    
+</body>
+
+</html>
+
+
